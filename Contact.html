@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="script.js"></script>
+
+  <title>Mentalfirst</title>
+</head>
+
+<body>
+
+  <header class="header">
+   
+    </div>
+
+    <div class="bottom-bar">
+      <div class="bottom-bar__content">
+        <a href="#" class="logo">
+          <img class="logo__img" src="images/Logos/Mentalfirst-logo.svg" alt="logo">
+        </a>
+    
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="Home.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="Resources.html">Resources</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="Contact.html">Contact us</a>
+            </li>
+            <li class="nav__item">
+              <a class="btn" href="tel:000">emergency hotline</a>
+            </li>
+          </ul>
+        </nav>
+  
+   
+      </div>
+    </div>
+  </header>
+  <br><br>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Need help?</h1>
+      <h3 style="margin-bottom: 10px;">Please use our hotline</h3>
+      <a href="tel:000">000</a>
+    </div>
+  </div>
+
+  <div class="resourcer-container">
+    <!-- Left side image -->
+    <div class="left-image">
+      <img src="images/other/depression.jpg" alt="Left Image">
+    </div>
+  
+    <!-- Right side content with existing resourcer class -->
+    <div class="resourcer">
+      <h1>Contact us</h1>
+      <h2 style="font-weight: normal; padding-left: 15px;">Email</h2>
+      <h2 style="font-weight: normal; padding-left: 15px;">number</h2>
+      <h1> Our socials</h1>
+      <div class="row">
+      
+        <div class="column">  <img style="width: 100px;" src="images/Logos/instagram.png" alt="instagram"></div>
+      <div class="column">  <img style="width: 100px;" src="images/Logos/facebook.png" alt="facebook"></div>
+        <div class="column">   <img  style="width: 100px;" src="images/Logos/X black.png" alt="X"></div>
+      </div>
+
+      <h1></h1>
+    </div>
+  </div>
+
+  <div id="ff-compose"></div>
+<script async defer src="https://formfacade.com/include/101946734902887849072/form/1FAIpQLScuCIzquMxmOFLgIvYU-KyFkCnw7HyvjL6J2ThGwnBoo-xG3A/classic.js?div=ff-compose"></script>
+  <br><br><br><br><br><br><br><br>
+  <div class="chatbot">
+    <iframe
+    src="https://www.chatbase.co/chatbot-iframe/ygX4HfX0kcus7i9tBMZOg"
+    width="100%"
+    style="height:500px; min-height: 500px;"
+    frameborder="0"
+    id="chatbotIframe"
+></iframe>
+
+    <button id="toggleChatbot">Close</button>
+</div>
+
+
+  <footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email:<a href="mailto:Email@email.email"><br>Email@email.email</a></p>
+            <p>Phone:<br>
+                <a href="tel:000 000 00000">000 000 00000</a>
+                <br>
+                <a href="tel:000">EMERGANCY NUMBER</a>
+            </p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+             <ul class="list">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+             <li><a href="404.html"><img src="Images/Logos/facebook.png" alt=""></a></li>
+             <li><a href="404.html"><img src="Images/Logos/X black.png" alt=""></a></li>
+             <li><a href="404.html"><img src="Images/Logos/instagram.png" alt=""></a></li>
+            </ul>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
+
+<script>
+  document.getElementById('toggleChatbot').addEventListener('click', function() {
+      var iframe = document.getElementById('chatbotIframe');
+      if (iframe.style.display === 'none') {
+          iframe.style.display = 'block';
+          this.textContent = 'Close';
+      } else {
+          iframe.style.display = 'none';
+          this.textContent = 'Open';
+      }
+  });
+</script>

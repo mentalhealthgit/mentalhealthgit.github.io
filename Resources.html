@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="script.js"></script>
+
+  <title>Mentalfirst</title>
+</head>
+
+<body>
+
+  <header class="header">
+   
+    </div>
+
+    <div class="bottom-bar">
+      <div class="bottom-bar__content">
+        <a href="#" class="logo">
+          <img class="logo__img" src="images/Logos/Mentalfirst-logo.svg" alt="logo">
+        </a>
+    
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="Home.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="Resources.html">Resources</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="Contact.html">Contact us</a>
+            </li>
+            <li class="nav__item">
+              <a class="btn" href="tel:000">emergency hotline</a>
+            </li>
+          </ul>
+        </nav>
+  
+   
+      </div>
+    </div>
+  </header>
+  <br>  <div class="resourcel">
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <header>
+        <h1 style="text-align: left; padding-bottom: 10px;">What resources do you need?</h1>
+      <input type="text" id="searchBar" placeholder="Search resources...">
+</header>
+    </div>
+  </div>
+    <!-- Search Bar -->
+<br>
+
+    <!-- Quick Filter Buttons -->
+    <div class="filter-bar">
+        <button onclick="filterResources('hotline')">Hotline Numbers</button>
+        <button onclick="filterResources('factsheet')">Factsheets</button>
+        <button onclick="filterResources('test')">Tests</button>
+        <button onclick="filterResources('disorder')">Disorders</button>
+    </div>
+
+    <!-- Resource Grid -->
+    <div class="resource-grid">
+      <div class="resource" data-tags="hotline, emergency, support">
+        <img src="images/Resource-images/phone.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Befrienders Kenya</h3>
+            <p class="details hidden">A charitable initiative offering suicide prevention support through free psychological support to people in distress.
+                Provides confidential emotional support and raises awareness to reduce the stigma surrounding suicide.
+            </p>
+            <div class="link hidden">
+                <br>
+                <a href="tel  :+254 722 178 177" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="hotline, emergency, support">
+        <img src="images/Resource-images/Niskize.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Niskize</h3>
+            <p class="details hidden">Offers a 24-hour call center with counseling services for people in distress, including face-to-face individual and group sessions, and support groups for those dealing with depression, anxiety, bipolar disorder, loss, and grief.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://niskize.co.ke/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="hotline, emergency, support">
+        <img src="images/Resource-images/EMKF.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Emergency Medicine Kenya Foundation (EMKF)</h3>
+            <p class="details hidden">A nonprofit started in 2015 to develop sustainable emergency medical care in Kenya. It runs a free nationwide suicide prevention helpline.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://example.com/hotline" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="hotline, emergency, support">
+        <img src="images/Resource-images/oasis-africa.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Oasis Africa</h3>
+            <p class="details hidden">A professional psychological counseling and training organization offering mental health awareness, stress management, professional counseling, psychotherapy, and personal development.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://oasisafrica.co.ke/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="hotline, emergency, support">
+        <img src="images/Resource-images/CBTKE.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Cognitive Behavioral Therapy-Kenya (CBT-Kenya)</h3>
+            <p class="details hidden">A psychotherapy center offering counseling and therapy for mental health issues like anxiety, depression, insomnia, anger, and substance abuse, with a focus on suicide prevention awareness.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://cbtkenya.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="hotline, emergency, support">
+        <img src="images/Resource-images/MHA.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Mental Health America</h3>
+            <p class="details hidden">Provides information on mental health, getting help, and taking action, with resources for locating mental health and addiction treatment facilities.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.mhanational.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+      <div class="resource" data-tags="support, hotline numbers">
+        <img src="images/Resource-images/national-empowerment-center.png" alt="Hotline Image">
+        <div class="content">
+            <h3>National Empowerment Center</h3>
+            <p class="details hidden">Offers recovery, empowerment, hope, and healing resources for those diagnosed with mental illness.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://power2u.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="factsheets, disorders">
+        <img src="images/Resource-images/NIH.png" alt="Hotline Image">
+        <div class="content">
+            <h3>National Institute of Mental Health</h3>
+            <p class="details hidden">Provides prevalence statistics on mental illnesses by age, gender, and race.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.nimh.nih.gov/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="factsheets, support">
+        <img src="images/Resource-images/presidents-new-freedom.png" alt="Hotline Image">
+        <div class="content">
+            <h3>President’s New Freedom Commission on Mental Health</h3>
+            <p class="details hidden">2003 report on improving the U.S. mental health system.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://govinfo.library.unt.edu/mentalhealthcommission/reports/FinalReport/downloads/downloads.html" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="factsheets, disorders">
+        <img src="images/Resource-images/WHO.png" alt="Hotline Image">
+        <div class="content">
+            <h3>World Health Organization</h3>
+            <p class="details hidden">Information on the global burden of disease, including mental disorders.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.who.int/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="support, hotline numbers">
+        <img src="images/Resource-images/NAMI.png" alt="Hotline Image">
+        <div class="content">
+            <h3>National Alliance on Mental Illness (NAMI)</h3>
+            <p class="details hidden">Provides resources for individuals with mental disorders and their families.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.nami.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="factsheets, disorders">
+        <img src="images/Resource-images/suicidology.png" alt="Hotline Image">
+        <div class="content">
+            <h3>American Association of Suicidology</h3>
+            <p class="details hidden">Promotes research, public awareness, education, and training on suicide prevention.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://suicidology.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="support, hotline numbers">
+        <img src="images/Resource-images/AFSP.png" alt="Hotline Image">
+        <div class="content">
+            <h3>American Foundation for Suicide Prevention (AFSP)</h3>
+            <p class="details hidden">Information on suicide prevention, support for survivors, and research.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://afsp.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="factsheets, disorders">
+        <img src="images/Resource-images/BBRF.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Brain & Behavior Research Foundation - BBRF</h3>
+            <p class="details hidden">Provides information and fact sheets on depressive disorders.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.bbrfoundation.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="tests, disorders">
+        <img src="images/Resource-images/MHA.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Mental Health Screening Tools</h3>
+            <p class="details hidden">Offers information on mental health screening and getting help.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://screening.mhanational.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="tests, disorders">
+        <img src="images/Resource-images/DBSA.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Depression Screening</h3>
+            <p class="details hidden">Educates on clinical depression and offers confidential screenings.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.depression-screening.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="tests, disorders">
+        <img src="images/Resource-images/MoodGYM.png" alt="Hotline Image">
+        <div class="content">
+            <h3>MoodGYM</h3>
+            <p class="details hidden">Uses CBT methods to help prevent depression.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://moodgym.com.au/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="factsheets, disorders">
+        <img src="images/Resource-images/SPRC.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Suicide Prevention Resource Center</h3>
+            <p class="details hidden">Fact sheets on suicide by state and population characteristics.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.sprc.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="disorders, support">
+        <img src="images/Resource-images/Focus-Adolescent-Services.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Focus Adolescent Services</h3>
+            <p class="details hidden">Covers a range of mental health problems, including self-injury.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.focusas.com/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="support, disorders">
+        <img src="images/Resource-images/SAFE.png" alt="Hotline Image">
+        <div class="content">
+            <h3>S.A.F.E. Alternatives</h3>
+            <p class="details hidden">Residential treatment program for self-injury.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://selfinjury.com/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="hotline numbers">
+        <img src="images/Resource-images/phone.png" alt="Hotline Image">
+        <div class="content">
+            <h3>National Suicide Prevention Lifeline</h3>
+            <p class="details hidden">Helpline: 1-800-273-TALK (8255)</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://suicidepreventionlifeline.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="hotline numbers, support">
+        <img src="images/Resource-images/phone.png" alt="Hotline Image">
+        <div class="content">
+            <h3>The Trevor Project</h3>
+            <p class="details hidden">Helpline: 1-866-488-7386</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.thetrevorproject.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="support, hotline numbers">
+        <img src="images/Resource-images/phone.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Depression and Bipolar Support Alliance</h3>
+            <p class="details hidden">Find a Support Group for depression and bipolar support.</p>
+            <div class="link hidden">
+                <br>
+                <a href="https://www.dbsalliance.org/" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    <div class="resource" data-tags="video, factsheets">
+        <img style="background-color: white;" src="images/Resource-images/video.png" alt="Hotline Image">
+        <div class="content">
+            <h3>Video about depression</h3>
+            <p class="details hidden">video talking encouraging individual to help those going through depression</p>
+            <div class="link hidden">
+                <br>
+                <a href="Resources\video.mp4" target="_blank">Visit Resource</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+  <br><br><br><br><br><br><br><br>
+  <div class="chatbot">
+    <iframe
+    src="https://www.chatbase.co/chatbot-iframe/ygX4HfX0kcus7i9tBMZOg"
+    width="100%"
+    style="height: 500px; min-height: 500px;"
+    frameborder="0"
+    id="chatbotIframe"
+></iframe>
+
+    <button id="toggleChatbot">Close</button>
+</div>
+
+
+  <footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email:<a href="mailto:Email@email.email"><br>Email@email.email</a></p>
+            <p>Phone:<br>
+                <a href="tel:000 000 00000">000 000 00000</a>
+                <br>
+                <a href="tel:000">EMERGANCY NUMBER</a>
+            </p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+             <ul class="list">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+             <li><a href="404.html"><img src="Images/Logos/facebook.png" alt=""></a></li>
+             <li><a href="404.html"><img src="Images/Logos/X black.png" alt=""></a></li>
+             <li><a href="404.html"><img src="Images/Logos/instagram.png" alt=""></a></li>
+            </ul>
+            </div>
+    </div>
+</footer>
+
+<script>
+  document.getElementById('toggleChatbot').addEventListener('click', function() {
+      var iframe = document.getElementById('chatbotIframe');
+      if (iframe.style.display === 'none') {
+          iframe.style.display = 'block';
+          this.textContent = 'Close';
+      } else {
+          iframe.style.display = 'none';
+          this.textContent = 'Open';
+      }
+  });
+</script>
+<script>
+        let lastClickedResource = null;
+
+document.getElementById('searchBar').addEventListener('input', function () {
+    let query = this.value.toLowerCase();
+    let resources = document.querySelectorAll('.resource');
+
+    resources.forEach(resource => {
+        let tags = resource.getAttribute('data-tags').toLowerCase();
+        if (tags.includes(query)) {
+            resource.classList.remove('hidden'); // Show matching resources
+        } else {
+            resource.classList.add('hidden'); // Hide non-matching resources
+        }
+    });
+});
+
+document.querySelectorAll('.resource').forEach(resource => {
+    resource.addEventListener('click', function () {
+        if (lastClickedResource && lastClickedResource !== this) {
+            lastClickedResource.classList.remove('expanded');
+        }
+
+        this.classList.toggle('expanded');
+
+        lastClickedResource = this.classList.contains('expanded') ? this : null;
+    });
+});
+
+function filterResources(category) {
+    let resources = document.querySelectorAll('.resource');
+
+    resources.forEach(resource => {
+        let tags = resource.getAttribute('data-tags').toLowerCase();
+        if (tags.includes(category)) {
+            resource.classList.remove('hidden'); // Show resources matching filter
+        } else {
+            resource.classList.add('hidden'); // Hide others
+        }
+    });
+}
+</script>
+
+</body>
+</html>
